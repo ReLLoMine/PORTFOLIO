@@ -1,0 +1,104 @@
+.header {
+  background-color: transparent;
+  padding: 40px 0;
+  min-height: 695px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*backdrop-filter: blur(10px);*/
+
+  background-color: rgba(40, 40, 40, 0.2);
+  /* box-shadow: 0px 40px 40px -40px rgba(8,7,16,0.6); */
+
+  /* background-image: url('./../img/header-bg.png'); */
+  border-bottom: 2px solid rgb(30, 30, 30);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+
+  text-align: center;
+}
+
+.header__wrapper {
+  padding: 0 15px;
+  max-width: 660px;
+}
+
+.header__title {
+  color: var(--header-title);
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.header__title strong {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.header__title em {
+  font-style: normal;
+}
+
+.header__text {
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.333;
+}
+
+.header__text p + p{
+  margin-top: 0.5em;
+}
+
+.menu-switcher {
+  position: relative;
+  z-index: 99999999;
+  display: none;
+  flex-direction: column;
+  transition: gap 0.4s ease-in-out;
+  gap: 8px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+.menu-switcher__line {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  width: 3.5rem;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.menu-switcher__line:focus {
+  outline: none !important;
+}
+.menu-switcher__line:nth-child(1) {
+  top: 0;
+}
+.menu-switcher__line:nth-child(3) {
+  bottom: 0;
+}
+
+.menu-switcher_opened .menu-switcher__line:nth-child(1) {
+  transform: rotate(45deg);
+  top: 15px;
+}
+.menu-switcher_opened .menu-switcher__line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+.menu-switcher_opened .menu-switcher__line:nth-child(3) {
+  bottom: 15px;
+  transform: rotate(45deg);
+}
+.header__navigation_opened {
+  left: 0 !important;
+}
+@media (max-width: 71.25em) {
+  .menu-switcher {
+    display: flex;
+  }
+}
