@@ -1,16 +1,19 @@
 .footer {
-    z-index: 1;
     background-color: transparent;
     margin-top: auto;
     padding: 60px 0 50px;
     background-color: rgba(40, 40, 40, 0.5);
+    border-top: 2px solid rgb(35, 35, 35);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
 }
 
 .footer__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     row-gap: 27px;
+    justify-content: center;
+    gap: 75px
 }
 
 .social {
