@@ -21,6 +21,7 @@ main, header, footer
   position: absolute;
   width: 100%;
   z-index: -1;
+  min-height: 100%;
 }
 
 .bg::before, .bg::after {
