@@ -44,12 +44,12 @@
     margin-top: 0px;
     font-size: 18px;
     text-align: justify;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
 }
 
 .skill__title[checked] ~ .skill__text {
-    height: 100px;
+    max-height: 200px;
     margin-top: 30px;
 }
 
