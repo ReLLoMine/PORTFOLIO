@@ -79,3 +79,15 @@ details[open] summary::after {
 details > summary {
   list-style: none;
 }
+
+/* Убираем scroll bar */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
