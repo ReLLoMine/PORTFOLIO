@@ -5,9 +5,11 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("nav.css");
-@import url("media.css");
 @import url("main.css");
 @import url("skills.css");
+@import url("colors.css");
+@import url("contacts.css");
+@import url("media.css");
 
 main, header, footer
 {
@@ -34,13 +36,13 @@ main, header, footer
 .bg::before {
   background: linear-gradient(90deg, rgb(15, 15, 35), transparent);
   left: 0;
-  z-index: -1;
+  z-index: -2;
 }
 
 .bg::after {
   background: linear-gradient(270deg, rgb(15, 15, 35), transparent);
   right: 0;
-  z-index: -1;
+  z-index: -2;
 }
 
 .container {
@@ -51,33 +53,6 @@ main, header, footer
 
 .section {
   padding: 70px 0;
-}
-
-
-/* Убираем стандартный маркер Chrome */
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-details summary::after{
-  content: "+";
-  position: absolute;
-  right: 0;
-  transition: all 0.2s ease-in-out;
-  transform: scale(1.2);
-}
-
-details summary {
-  position: relative;
-}
-
-details[open] summary::after {
-  transform: rotate(45deg) scale(1.2);
-}
-
-/* Убираем стандартный маркер Firefox */
-details > summary {
-  list-style: none;
 }
 
 /* Убираем scroll bar */

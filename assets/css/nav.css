@@ -1,10 +1,10 @@
 .nav {
     z-index: 1;
     padding: 20px 0;
-    background-color: rgba(40, 40, 40, 0.5);
+    background-color: var(--nav-color);
     letter-spacing: normal;
-    border-bottom: 2px solid rgb(35, 35, 35);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    border-bottom: 2px solid var(--nav-border-color);
+    box-shadow: 0 0 40px var(--shadow-color);
 }
 
 .nav-row {
@@ -60,5 +60,5 @@
     display: block;
     height: 2px;
     width: 100%;
-    background-color: rgb(102, 78, 124);
+    background-color: var(--active-page-color);
 }

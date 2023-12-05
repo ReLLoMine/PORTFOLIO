@@ -1,315 +1,172 @@
 
 @media (max-width:1437px) {
-    .contacts-content-wrapper {
-      flex-direction: column;
-    }
-  
-    .contacts__feedback-form {
-      margin: 30px auto 0;
+  .contacts-content-wrapper {
+    flex-direction: column;
   }
+
+  .contacts__feedback-form {
+    margin: 30px auto 0;
+}
+}
+
+
+
+option {
+    color: #000;
+}
+
+.swiper {
+  min-width: 0;
+  margin-top: 40px;
+}
+
+.link {
+  border-radius: 5px;
+  background: var(--accent);
+  display: inline-block;
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 150%; /* 2.625rem */
+  padding: 0.8571em 1.28571em;
+  box-shadow: var(--box-shadow);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.link:active {
+  background: #2b2409;
+  color: #b9b089;
+}
+@media (hover: hover) {
+  .link:hover {
+    background: var(--white);
+    color: var(--project-card-bg);
   }
-  
-  
-  
-  option {
-      color: #000;
+}
+@media (max-width: 71.25em) {
+  .link {
+    font-size: 1.25rem;
   }
-  .swiper {
-    min-width: 0;
-    margin-top: 40px;
+}
+@media (max-width: 25em) {
+  .link {
+    font-size: 1rem;
   }
-  .review-card {
-    gap: 15px;
-    padding: 15px 25px;
-    border-radius: 15px;;
+}
+
+
+@media (max-width: 1140px) {
+  .nav-list {
+    position: fixed;
     display: flex;
     flex-direction: column;
-    width: 300px;
-    background-color: var(--project-card-bg);
-  }
-  
-  
-
-  .review-card-header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-  .rate-wrapper {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-  }
-  .review-card-body p {
-    text-align: justify;
-  }
-  .review-card-header h3 {
+    padding-top: 50px;
     font-size: 24px;
-  }
-  .rate-count {
-    font-size: 18px;
-    font-weight: 400;
-  }
+    width: 320px;
+    background-color: #171718;
+    top: 0;
+    bottom: 0;
+    left: -320px;
+    }
   
-  .rate-img {
-    width: 18px;
-  }
-  .feedback-form {
-      max-width: 100%;
-      display: flex;
+}
+
+@media (max-width: 800px) {
+    /* Skills page */
+
+    .skill__text {
+      width: calc(100vw - 80px) !important;
+    }
+}
+
+@media (max-width: 620px) {
+
+    /* Header  */
+
+    .header {
+        min-height: unset;
+    }
+
+    .header__title {
+        font-size: 30px;
+    }
+
+    .header__title strong {
+        font-size: 40px;
+    }
+
+    /* Nav */
+
+    .nav-row {
+        justify-content: space-between;
+    }
+
+    /* General */
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .title-1 {
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+
+    .title-2 {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    /* Projects */
+
+    .project__title {
+        font-size: 22px;
+    }
+
+    /* Project page */
+
+    .project-details__desc {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+    .project-header {
       flex-direction: column;
-      align-items: center;
     }
-    @media (max-width: 35em) {
-      .feedback-form {
-        align-items: stretch;
-        width: 80%;
-      }
+
+    /* Content List */
+
+    .content-list {
+        row-gap: 20px;
     }
-    @media (max-width: 26em) {
-      .feedback-form {
-        width: 100%;
-      }
+
+    .content-list__item {
+        font-size: 16px;
     }
-    .feedback-form__inputs {
-      display: flex;
-      flex-direction: column;
-      font-size: 1rem;
-      gap: 1.875em;
+
+    /* Footer */
+
+    .footer {
+        padding: 40px 0 30px;
     }
-    @media (max-width: 71.25em) {
-      .feedback-form__inputs {
-        font-size: 1.4rem;
-      }
+
+    .footer__wrapper {
+        row-gap: 20px;
     }
-    .reviews-form {
-      flex-direction: row;
-      
+
+    /* Social */
+
+    .social {
+        column-gap: 20px;
     }
-    @media (max-width: 35em) {
-      .reviews-form {
-        flex-direction: column;
-      }
+
+    .social__item {
+        width: 28px;
     }
-    @media (max-width: 61.25em) {
-      .feedback-form__inputs {
-        font-size: 1.3rem;
-      }
-    }
-    @media (max-width: 46em) {
-      .feedback-form__inputs {
-        font-size: 1.115rem;
-      }
-    }
-    @media (max-width: 26em) {
-      .feedback-form__inputs {
-        font-size: 1rem;
-      }
-    }
-    .feedback-form__personal-information {
-      position: relative;
-      display: flex;
-      gap: 1.875em;
-    }
-    @media (max-width: 35em) {
-      .feedback-form__personal-information {
-        flex-direction: column;
-      }
-    }
-    .feedback-form__input {
-      width: 50%;
-      padding: 0.9375em;
-      border-radius: 5px;
-      border: 4px solid var(--title-1);
-      color: var(--project-card-text);
-      font-weight: 500;
-      line-height: normal;
-    }
-    .feedback-form__input::-moz-placeholder {
-      color: var(--project-card-text);
-      font-weight: 500;
-      line-height: normal;
-    }
-    .feedback-form__input::placeholder {
-      color: var(--project-card-text);
-      font-weight: 500;
-      line-height: normal;
-    }
-    @media (max-width: 35em) {
-      .feedback-form__input {
-        width: 100%;
-      }
-    }
-    .feedback-form__user-message {
-      resize: none;
-      padding: 0.9375em;
-      height: 12.375em;
-      border-radius: 5px;
-      border: 4px solid var(--title-1);
-      color: var(--project-card-text);
-      font-weight: 500;
-      line-height: normal;
-    }
-    
-    .reviews-form .feedback-form__user-message {
-      height: 3.583em;
-    }
-    .reviews-form .feedback-form__input {
-      width: 100%
-    }
-    .feedback-form__user-message::-moz-placeholder {
-      color: var(--project-card-text);
-      font-weight: 500;
-      line-height: normal;
-    }
-    .feedback-form__user-message::placeholder {
-      color: var(--project-card-text);
-      font-weight: 500;
-      line-height: normal;
-    }
-    .feedback-form__submit-button {
-      align-self: center;
-    }
-    
-    .feedback-form__submit-button {
-      margin-top: 2.321428em;
-      border-radius: 5px;
-      border: 3px solid var(--accent);
-      box-shadow: 13px 10px 30px #36351f;
-    }
-    .link {
-      border-radius: 5px;
-      background: var(--accent);
-      display: inline-block;
-      color: var(--white);
-      font-size: 1.5rem;
-      font-weight: 600;
-      line-height: 150%; /* 2.625rem */
-      padding: 0.8571em 1.28571em;
-      box-shadow: var(--box-shadow);
-      -webkit-tap-highlight-color: transparent;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-    }
-    .link:active {
-      background: #2b2409;
-      color: #b9b089;
-    }
-    @media (hover: hover) {
-      .link:hover {
-        background: var(--white);
-        color: var(--project-card-bg);
-      }
-    }
-    @media (max-width: 71.25em) {
-      .link {
-        font-size: 1.25rem;
-      }
-    }
-    @media (max-width: 25em) {
-      .link {
-        font-size: 1rem;
-      }
-    }
-  @media (max-width: 1140px) {
-    .nav-list {
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      padding-top: 50px;
-      font-size: 24px;
-      width: 320px;
-      background-color: #171718;
-      top: 0;
-      bottom: 0;
-      left: -320px;
-      }
-    
-  }
-  @media (max-width: 620px) {
-  
-      /* Header  */
-  
-      .header {
-          min-height: unset;
-      }
-  
-      .header__title {
-          font-size: 30px;
-      }
-  
-      .header__title strong {
-          font-size: 40px;
-      }
-  
-      /* Nav */
-  
-      .nav-row {
-          justify-content: space-between;
-      }
-  
-      /* General */
-  
-      .section {
-          padding: 40px 0;
-      }
-  
-      .title-1 {
-          margin-bottom: 30px;
-          font-size: 40px;
-      }
-  
-      .title-2 {
-          margin-bottom: 10px;
-          font-size: 30px;
-      }
-  
-      /* Projects */
-  
-      .project__title {
-          font-size: 22px;
-      }
-  
-      /* Project page */
-  
-      .project-details__desc {
-          margin-bottom: 20px;
-          font-size: 22px;
-      }
-  
-      /* Content List */
-  
-      .content-list {
-          row-gap: 20px;
-      }
-  
-      .content-list__item {
-          font-size: 16px;
-      }
-  
-      /* Footer */
-  
-      .footer {
-          padding: 40px 0 30px;
-      }
-  
-      .footer__wrapper {
-          row-gap: 20px;
-      }
-  
-      /* Social */
-  
-      .social {
-          column-gap: 20px;
-      }
-  
-      .social__item {
-          width: 28px;
-      }
-  
-  }
+
+}
 

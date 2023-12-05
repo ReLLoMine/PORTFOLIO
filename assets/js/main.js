@@ -19,18 +19,16 @@ class DetailsBtn
 {
   constructor(el) {
     this.el = el;
-    this.checked = false;
 
     this.el.addEventListener('click', (e) => this.onClick(e));
   }
 
   onClick(e) {
-    this.checked = !this.checked;
-    if(this.checked)
+    if(this.el.hasAttribute("checked"))
     {
-      this.el.setAttribute("checked", "");
-    }else{
       this.el.removeAttribute("checked");
+    }else{
+      this.el.setAttribute("checked", "");
     }
   }
 }

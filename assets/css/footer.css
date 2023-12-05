@@ -2,9 +2,9 @@
     background-color: transparent;
     margin-top: auto;
     padding: 60px 0 50px;
-    background-color: rgba(40, 40, 40, 0.5);
-    border-top: 2px solid rgb(35, 35, 35);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    background-color: var(--footer-color);
+    border-top: 2px solid var(--footer-border-color);
+    box-shadow: 0 0 40px var(--shadow-color);
 }
 
 .footer__wrapper {
@@ -29,13 +29,6 @@
 .copyright p + p {
     margin-top: 0.5em;
 }
-
-.contacts-content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
 
 .social__item {
     width: 28px;

@@ -8,11 +8,31 @@
   }
   
 .skill {
-    width: 100%;
-    background-color: rgba(40, 40, 40, 0.2);
-    box-shadow: 3px 3px 5px 0px rgba(8,7,16,0.6);
+    width: 65%;
+    background-color: var(--skills-color);
+    box-shadow: 3px 3px 5px 0px var(--shadow-color);
     padding: 20px 25px;
     border-radius: 10px;
+}
+
+.skill {
+    text-wrap: balance;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.skill > .skill__title > p {
+    max-width: 90%;
+}
+
+.skill__text {
+    width: 750px;
+    text-wrap: wrap;
+    overflow-wrap: normal;
+}
+
+.s_right {
+    align-self: flex-end;
 }
 
 .container-skills{
@@ -22,13 +42,17 @@
 }
 
 .skill__title::after {
-    content: "<";
+    content: ">";
     transition: all 0.2s ease-in-out !important;
     transform: scale(1.2);
 }
 
-.skill__title[checked]::after{
-    transform: rotate(-90deg) scale(1.2);
+.s_right > .skill__title::after {
+    transform: rotate(180deg) scale(1.2);
+}
+
+.skill__title[checked]::after {
+    transform: rotate(90deg) scale(1.5);
 }
 
 .skill__title {
@@ -36,8 +60,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: left;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.s_left > .skill__title {
+    flex-direction: row-reverse;
+    text-align: right;
 }
 
 .skill__text {
@@ -51,6 +81,10 @@
 .skill__title[checked] ~ .skill__text {
     max-height: 200px;
     margin-top: 30px;
+}
+
+.skill:has(.skill__title[checked]) {
+    width: 100%;
 }
 
 
