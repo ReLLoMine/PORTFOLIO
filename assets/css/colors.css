@@ -2,6 +2,7 @@
     --shadow-color: rgba(8,7,16,0.6);
 
     --nav-color: rgba(40, 40, 40, 0.5);
+    --nav-color-solid: rgba(28, 28, 38, 1);
     --footer-color: var(--nav-color);
     --header-color: rgba(40, 40, 40, 0.2);
     --stat-color: var(--header-color);

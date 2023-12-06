@@ -93,9 +93,11 @@
   bottom: 15px;
   transform: rotate(45deg);
 }
+
 .header__navigation_opened {
-  left: 0 !important;
+  right: 0 !important;
 }
+
 @media (max-width: 71.25em) {
   .menu-switcher {
     display: flex;

@@ -64,15 +64,21 @@ option {
     position: fixed;
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     font-size: 24px;
     width: 320px;
-    background-color: #171718;
-    top: 0;
-    bottom: 0;
-    left: -320px;
+    background: linear-gradient(-90deg, var(--nav-color) 80%, transparent);
+    top: 80px;
+    right: -320px;
+    box-shadow: 0px 40px 50px -40px var(--shadow-color);
+    border-top: 2px solid var(--nav-border-color);
+    border-bottom: 2px solid var(--nav-border-color);
     }
-  
+
+    .nav-list__item {
+      transform: translate(20px, 0px);
+    }
 }
 
 @media (max-width: 800px) {
@@ -89,6 +95,7 @@ option {
 
     .header {
         min-height: unset;
+        flex-direction: column;
     }
 
     .header__title {
@@ -100,6 +107,10 @@ option {
     }
 
     /* Nav */
+
+    .nav-list {
+      background: linear-gradient(-90deg, var(--nav-color-solid) 80%, transparent);
+    }
 
     .nav-row {
         justify-content: space-between;
@@ -122,6 +133,10 @@ option {
     }
 
     /* Projects */
+
+    .project {
+      max-width: 80vw;
+    }
 
     .project__title {
         font-size: 22px;
@@ -155,7 +170,14 @@ option {
     }
 
     .footer__wrapper {
-        row-gap: 20px;
+      row-gap: 20px;
+      flex-direction: column;
+    }
+
+    /* Stat */
+
+    .stat-container {
+      flex-direction: column;
     }
 
     /* Social */
@@ -163,6 +185,7 @@ option {
     .social {
         column-gap: 20px;
     }
+
 
     .social__item {
         width: 28px;
