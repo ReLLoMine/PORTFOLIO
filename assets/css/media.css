@@ -153,6 +153,10 @@ option {
       flex-direction: column;
     }
 
+    .project-gallery-main-item {
+      position: fixed;
+    }
+
     /* Content List */
 
     .content-list {
@@ -189,6 +193,12 @@ option {
 
     .social__item {
         width: 28px;
+    }
+
+    /* About */
+
+    .profile__img {
+      max-width: 65%;
     }
 
 }
