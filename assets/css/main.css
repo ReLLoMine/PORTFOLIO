@@ -209,8 +209,10 @@
     z-index: 1;
     scale: 0;
     transition: opacity 0.2s ease-in-out !important;
-
-    box-shadow: 0px 5px 35px var(--shadow-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    box-shadow: 0px 5px 700px 400px var(--gallery-shadow-color);
 }
 
 .project-gallery-main-item[visible] {

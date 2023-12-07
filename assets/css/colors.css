@@ -1,5 +1,6 @@
 :root {
-    --shadow-color: rgba(8,7,16,0.6);
+    --shadow-color: rgba(8, 7, 16, 0.6);
+    --gallery-shadow-color: rgba(8, 7, 16, 0.8);
 
     --nav-color: rgba(40, 40, 40, 0.5);
     --nav-color-solid: rgba(28, 28, 38, 1);
