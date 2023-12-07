@@ -72,8 +72,6 @@ option {
     top: 80px;
     right: -320px;
     box-shadow: 0px 40px 50px -40px var(--shadow-color);
-    border-top: 2px solid var(--nav-border-color);
-    border-bottom: 2px solid var(--nav-border-color);
     }
 
     .nav-list__item {
