@@ -62,3 +62,7 @@
     width: 100%;
     background-color: var(--active-page-color);
 }
+
+.header__navigation_opened {
+    right: 0 !important;
+  }
